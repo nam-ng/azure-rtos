@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/***********************************************************************************************************************
+  Purpose: Module Description File (MDF) Example (Schema Version 2.0)
+           This is a description of a sample FIT module configuration file
+***********************************************************************************************************************/
+-->
+<module xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="2.0" xs:noNamespaceSchemaLocation="schema_mdf_2.00.xsd">
+    <fileVersion>1.00</fileVersion>
+    <formatVersion>2.00</formatVersion>
+    <fileTemplate></fileTemplate>
+    <configuration>
+        <property id="TX_MAX_PRIORITIES" display="Maximum priority" default="32" type="textbox">
+            <description></description>
+        </property>
+        <property id="TX_MINIMUM_STACK" display="Minimun priority" default="1" type="textbox">
+            <description></description>
+        </property>
+        <property id="TX_THREAD_USER_EXTENSION" display="Thread extension" default="h" type="textbox">
+            <description></description>
+        </property>
+    </configuration>
+</module>

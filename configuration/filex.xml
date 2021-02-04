@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refinfo>
+   <!-- multiple versions permitted -->
+   <!-- Other toolchain supported in the future
+    <toolchain>
+        <brand>IAR</brand>
+        <product>ICCRX</product>
+        <version>3.10</version>
+    </toolchain>
+	<toolchain>
+      <brand>Renesas</brand>
+      <product>RXC</product>
+      <version>3.01.00</version>
+   </toolchain>
+    -->
+   <toolchain>
+      <brand>GNU</brand>
+      <product>GNURX</product>
+      <version>4.8.4</version>
+   </toolchain>
+   <!-- only one target entry allowed; multiple sub tags permitted -->
+   <target>
+      <toolchain>GNURX</toolchain>
+      <family>RX</family>
+      <series>RX600</series>
+      <group>RX65N</group>
+   </target>
+   <!-- only one package entry allowed -->
+   <!-- multiple dependencies, applications, functions, and incdirs permitted -->
+   <package>
+      <type>rtosmodule</type>
+      <name>filex</name>
+      <version>6.1.3_rel</version>
+      <application>AzureRTOSLibrary</application>
+      <desc>text</desc>
+      <details>text</details>
+      <function>RTOS</function>
+	  <category>rtos.library</category>
+      <configgenpath>
+         <path>libs/filex/fx_user.h</path>
+      </configgenpath>
+	  <!-- Copy resources to project -->
+      <impdir>
+         <folder>filex/common</folder>
+         <path>libs/filex/common</path>
+      </impdir>
+	  <impdir>
+         <file>filex/ports/generic/inc/fx_port.h</file>
+         <path>libs/filex/ports/generic/inc</path>
+      </impdir>
+	  <impdir>
+         <file>configuration/config_files/fx_user.h</file>
+         <path>libs/filex</path>
+      </impdir>
+	  <!-- include header-->
+	  <incdir>
+	     <folder>libs/filex</folder>
+	     <folder>libs/filex/common/inc</folder>
+	     <folder>libs/filex/ports/generic/inc</folder>
+	  </incdir>
+   </package>
+</refinfo>
