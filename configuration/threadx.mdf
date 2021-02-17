@@ -7,11 +7,5 @@
         <property id="TX_MAX_PRIORITIES" display="Maximum priority" default="32" type="textbox">
             <description></description>
         </property>
-        <property id="TX_MINIMUM_STACK" display="Minimun priority" default="1" type="textbox">
-            <description></description>
-        </property>
-        <property id="TX_THREAD_USER_EXTENSION" display="Thread extension" default="h" type="textbox">
-            <description></description>
-        </property>
     </configuration>
 </module>

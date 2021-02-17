@@ -7,7 +7,7 @@
         <product>ICCRX</product>
         <version>3.10</version>
     </toolchain>
-    -->
+	-->
 	<toolchain>
 		<brand>Renesas</brand>
 		<product>RXC</product>
@@ -18,7 +18,6 @@
 		<product>GNURX</product>
 		<version>4.8.4</version>
 	</toolchain>
-	<!-- only one target entry allowed; multiple sub tags permitted -->
 	<target>
 		<toolchain>RXC</toolchain>
 		<family>RX</family>
@@ -32,7 +31,6 @@
 		<group>RX65N</group>
 	</target>
 	<!-- only one package entry allowed -->
-	<!-- multiple dependencies, applications, functions, and incdirs permitted -->
 	<package>
 		<type>rtosmodule</type>
 		<name>threadx</name>
@@ -41,7 +39,6 @@
 		<category>rtos.kernel</category>
 		<desc>Azure RTOS ThreadX</desc>
 		<details>Azure RTOS ThreadX is an advanced real-time operating system (RTOS) designed specifically for deeply embedded applications</details>
-		<function>RTOS</function>
 		<configgenpath>
 			<path>libs/threadx/tx_user.h</path>
 		</configgenpath>
@@ -61,10 +58,6 @@
 			<path>libs/threadx/common</path>
 		</impdir>
 		<impdir>
-			<file>threadx/samples/demo_threadx.c</file>
-			<path>src</path>
-		</impdir>
-		<impdir>
 			<file>configuration/config_files/tx_user.h</file>
 			<path>libs/threadx</path>
 		</impdir>
@@ -80,15 +73,5 @@
 		<incdir>
 			<path>libs/threadx/common/inc</path>
 		</incdir>
-		<sections>
-			<toolchain>RXC</toolchain>
-			<series>RX600</series>
-			<group>RX65N</group>
-			<section>
-				<name>B</name>
-				<name>FREEMEM</name>
-				<address>0x00004000</address>
-			</section>
-		</sections>
 	</package>
 </refinfo>

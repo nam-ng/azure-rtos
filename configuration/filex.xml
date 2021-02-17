@@ -18,7 +18,6 @@
 		<product>GNURX</product>
 		<version>4.8.4</version>
 	</toolchain>
-	<!-- only one target entry allowed; multiple sub tags permitted -->
 	<target>
 		<toolchain>GNURX</toolchain>
 		<family>RX</family>
@@ -26,7 +25,6 @@
 		<group>RX65N</group>
 	</target>
 	<!-- only one package entry allowed -->
-	<!-- multiple dependencies, applications, functions, and incdirs permitted -->
 	<package>
 		<type>rtosmodule</type>
 		<name>filex</name>
