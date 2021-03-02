@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <refinfo>
 	<!-- multiple versions permitted -->
-	<!-- Other toolchain supported in the future
-    <toolchain>
-        <brand>IAR</brand>
-        <product>ICCRX</product>
-        <version>3.10</version>
-    </toolchain>
-    -->
 	<toolchain>
 		<brand>Renesas</brand>
 		<product>RXC</product>
@@ -20,12 +13,14 @@
 	</toolchain>
 	<target>
 		<toolchain>RXC</toolchain>
+		<board>RSKRX65N-2MB</board>
 		<family>RX</family>
 		<series>RX600</series>
 		<group>RX65N</group>
 	</target>
 	<target>
 		<toolchain>GNURX</toolchain>
+		<board>RSKRX65N-2MB</board>
 		<family>RX</family>
 		<series>RX600</series>
 		<group>RX65N</group>
@@ -34,23 +29,27 @@
 	<package>
 		<type>rtosmodule</type>
 		<name>AzureRTOS</name>
-		<version>6.1.3_rel-rx-1.0.0</version>
+		<version>6.1.3_rel-rx-1.0.1</version>
 		<application>AzureRTOS</application>
-		<!-- Copy resources to project -->
-		<impdir>
-			<file>threadx/samples/demo_threadx.c</file>
-			<path>src</path>
-		</impdir>
-		<!-- compiler setting -->
-		<sections>
-			<toolchain>RXC</toolchain>
-			<series>RX600</series>
-			<group>RX65N</group>
-			<section>
-				<name>B</name>
-				<name>FREEMEM</name>
-				<address>0x00004000</address>
-			</section>
-		</sections>
+		<apps>
+			<app id="application" value="bare" name="Bare project" description="Project includes ThreadX, BSP, and CMT">
+				<!-- Copy resources to project -->
+				<impdir>
+					<file>threadx/samples/demo_threadx.c</file>
+					<path>src</path>
+				</impdir>
+				<!-- compiler setting -->
+				<sections>
+					<toolchain>RXC</toolchain>
+					<series>RX600</series>
+					<group>RX65N</group>
+					<section>
+						<name>B</name>
+						<name>FREEMEM</name>
+						<address>0x00004000</address>
+					</section>
+				</sections>
+			</app>
+		</apps>
 	</package>
 </refinfo>
