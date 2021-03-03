@@ -31,6 +31,7 @@
 		</impdir>
 		<!-- include header-->
 		<incdir>
+			<path>libs/filex</path>
 			<path>libs/filex/common/inc</path>
 			<path>libs/filex/ports/generic/inc</path>
 		</incdir>

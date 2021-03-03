@@ -47,6 +47,7 @@
 			<path>libs/netxduo/ports/rxv2/ccrx/inc</path>
 		</incdir>
 		<incdir>
+			<path>libs/netxduo</path>
 			<path>libs/netxduo/common/inc</path>
 		</incdir>
 		<!-- app setting -->
