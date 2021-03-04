@@ -9,7 +9,7 @@
 	<toolchain>
 		<brand>GNU</brand>
 		<product>GNURX</product>
-		<version>4.8.4</version>
+		<version>8.3.0</version>
 	</toolchain>
 	<target>
 		<toolchain>RXC</toolchain>
