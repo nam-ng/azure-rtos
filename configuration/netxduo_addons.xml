@@ -137,6 +137,28 @@
 			<folder>netxduo/nx_secure/src</folder>
 			<path>libs/netxduo_addons/nx_secure/src</path>
 		</impdir>
+		<!-- patch files -->
+		<impdir>
+			<toolchain>RXC</toolchain>
+			<file>configuration/patch_files/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/deps/flatcc/include/flatcc/portable/pstdalign.h</file>
+			<file>configuration/patch_files/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/deps/flatcc/include/flatcc/portable/pstdint.h</file>
+			<path>libs/netxduo_addons/addons/azure_iot/azure_iot_security_module/iot-security-module-core/deps/flatcc/include/flatcc/portable</path>
+		</impdir>
+		<impdir>
+			<toolchain>RXC</toolchain>
+			<file>configuration/patch_files/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc/asc_security_core/utils/itime.h</file>
+			<path>libs/netxduo_addons/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc/asc_security_core/utils</path>
+		</impdir>
+		<impdir>
+			<toolchain>RXC</toolchain>
+			<file>configuration/patch_files/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/src/utils/event_loop_be.c</file>
+			<path>libs/netxduo_addons/addons/azure_iot/azure_iot_security_module/iot-security-module-core/src/utils</path>
+		</impdir>
+		<impdir>
+			<toolchain>RXC</toolchain>
+			<file>configuration/patch_files/netxduo/addons/azure_iot/azure_iot_security_module/src/utils/itime.c</file>
+			<path>libs/netxduo_addons/addons/azure_iot/azure_iot_security_module/src/utils</path>
+		</impdir>
 		<!-- include header -->
 		<incdir>
 			<path>libs/netxduo_addons/addons/azure_iot</path>
@@ -165,8 +187,13 @@
 			<compiler>NX_ENABLE_IP_PACKET_FILTER</compiler>
 			<!-- need macro or not? -->
 			<!--compiler>DISABLE_ASC_PORT</compiler-->
-			<!--compiler>FLATCC_NO_ASSERT</compiler-->
-			<!--compiler>NX_AZURE_IOT_LOG_LEVEL=0</compiler-->
+			<compiler>FLATCC_NO_ASSERT</compiler>
+			<compiler>NX_AZURE_IOT_LOG_LEVEL=0</compiler>
 		</macrodefinition>
+		<!-- library -->
+		<standardlibrary>
+			<toolchain>RXC</toolchain>
+			<libname>math.h</libname>
+		</standardlibrary>
 	</package>
 </refinfo>
