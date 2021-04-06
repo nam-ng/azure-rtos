@@ -168,6 +168,11 @@
 			<compiler>FLATCC_NO_ASSERT</compiler>
 			<compiler>NX_AZURE_IOT_LOG_LEVEL=0</compiler>
 		</macrodefinition>
+		<!-- library -->
+		<standardlibrary>
+			<toolchain>RXC</toolchain>
+			<libname>math.h</libname>
+		</standardlibrary>
 		<!-- section -->
 		<sections>
 			<toolchain>RXC</toolchain>
