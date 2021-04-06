@@ -46,7 +46,7 @@
 					<section>
 						<name>B</name>
 						<name>FREEMEM</name>
-						<address>0x00004000</address>
+						<address>0x00010000</address>
 					</section>
 				</sections>
 			</app>

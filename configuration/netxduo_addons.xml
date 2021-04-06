@@ -173,8 +173,8 @@
 			<toolchain>RXC</toolchain>
 			<libname>math.h</libname>
 		</standardlibrary>
-		<!-- section -->
-		<sections>
+		<!-- section (not supported now) -->
+		<!--sections>
 			<toolchain>RXC</toolchain>
 			<series>RX600</series>
 			<group>RX65N</group>
@@ -183,6 +183,6 @@
 				<name>FREEMEM</name>
 				<address>0x00010000</address>
 			</section>
-		</sections>
+		</sections-->
 	</package>
 </refinfo>
