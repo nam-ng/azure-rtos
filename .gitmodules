@@ -1,12 +1,12 @@
 [submodule "threadx"]
 	path = threadx
 	url = https://github.com/nam-ng/threadx
-	branch = v6.1.3_rel
+	branch = v6.1.6_rel
 [submodule "netxduo"]
 	path = netxduo
 	url = https://github.com/nam-ng/netxduo
-	branch = v6.1.3_rel
+	branch = v6.1.6_rel
 [submodule "filex"]
 	path = filex
 	url = https://github.com/nam-ng/filex
-	branch = v6.1.3_rel
+	branch = v6.1.6_rel
