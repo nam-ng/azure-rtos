@@ -543,12 +543,6 @@
          <description />
       </property>
       <!-- NX_ENABLE_LOW_WATERMARK -->
-      <property id="USE_NX_ENABLE_LOW_WATERMARK" display="Feature of low watermark" default="0" type="checkbox">
-         <option id="USE_NX_ENABLE_LOW_WATERMARK.0" display="Disable" value="0" />
-         <option id="USE_NX_ENABLE_LOW_WATERMARK.1" display="Enable" value="1" />
-         <description />
-      </property>
-      <!-- NX_ENABLE_LOW_WATERMARK -->
       <property id="USE_NX_ENABLE_LOW_WATERMARK" display="Define the maximum receive queue for TCP socket" default="0" type="checkbox">
          <option id="USE_NX_ENABLE_LOW_WATERMARK.0" display="Disable" value="0" />
          <option id="USE_NX_ENABLE_LOW_WATERMARK.1" display="Enable" value="1" />

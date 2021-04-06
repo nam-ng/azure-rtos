@@ -550,12 +550,6 @@
 #define NX_ENABLE_TCP_QUEUE_DEPTH_UPDATE_NOTIFY
 #endif
 
-/* Defined, feature of low watermark is enabled. */
-#define USE_NX_ENABLE_LOW_WATERMARK			0
-#if USE_NX_ENABLE_LOW_WATERMARK
-#define NX_ENABLE_LOW_WATERMARK
-#endif
-
 /* Define the maximum receive queue for TCP socket. */
 #define USE_NX_ENABLE_LOW_WATERMARK			0
 #if USE_NX_ENABLE_LOW_WATERMARK
