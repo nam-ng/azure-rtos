@@ -28,12 +28,12 @@
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-        <configuration enable="true" exclude="false" id="cd384950-82c6-4fff-a73f-a48b6c91c67b" inuse="true" name="threadx">
+        <configuration enable="true" exclude="false" inuse="true" name="threadx">
             <component display="Azure RTOS ThreadX" id="threadx${packageVersion}" version="${packageVersion}">
             </component>
             <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
         </configuration>
-        <configuration enable="true" exclude="false" id="697f3898-7332-4a4c-9ef6-ebe28c505039" inuse="true" name="filex">
+        <configuration enable="true" exclude="false" inuse="true" name="filex">
             <component display="Azure RTOS FileX" id="filex${packageVersion}" version="${packageVersion}">
             </component>
             <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
