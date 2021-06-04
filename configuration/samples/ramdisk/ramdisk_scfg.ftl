@@ -11,7 +11,7 @@
             </toolchain>
         </configuration>
         <platform id="${targetDevice}"/>
-        <option id="board" value="RSKRX65N-2MB (1.03)"/>
+        <option id="board" value="Custom User Board"/>
     </general>
     <tool id="Summary" version="1.0.0.0">
         <option id="com.renesas.smc.code.path" value="src\smc_gen"/>

@@ -79,6 +79,12 @@
 					<optionid>com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.optimize</optionid>
 					<value>com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.optimize.level0</value>
 				</option>
+				<!-- enable remove unused code -->
+				<option>
+					<toolchain>GNURX</toolchain>
+					<optionid>com.renesas.cdt.managedbuild.gcc.core.option.optimization.optimizationLevel</optionid>
+					<value>com.renesas.cdt.managedbuild.gcc.core.option.optimization.optimizationLevel.speedCodeSize</value>
+				</option>
 			</app>
 			<app id="application" value="ping" name="NetX Duo Ping sample project" description="This sample project illustrates the setup and use of NetX Duo IPv4/IPv6 TCP/IP stack via ping from another node on the local network. By default, this demonstration requests an IP Address via DHCP, and displays the status and assigned IP Address via terminal I/O window">
 				<board>RSKRX65N-2MB</board>
@@ -104,6 +110,10 @@
 					<path>src</path>
 				</impdir>
 				<!-- copy driver codes -->
+				<impdir>
+					<folder>rx-driver-package/source/r_cmt_rx/r_cmt_rx_vx.xx/r_cmt_rx</folder>
+					<path>src/smc_gen/r_cmt_rx</path>
+				</impdir>
 				<impdir>
 					<folder>rx-driver-package/source/r_ether_rx/r_ether_rx_vx.xx/r_ether_rx</folder>
 					<path>src/smc_gen/r_ether_rx</path>
@@ -317,7 +327,7 @@
 						<name>B_RX_DESC_1</name>
 						<name>B</name>
 						<name>FREEMEM</name>
-						<address>0x00010000</address>
+						<address>0x00009000</address>
 					</section>
 				</sections>
 				<!-- enable remove unused code -->
@@ -408,7 +418,7 @@
 						<name>B_RX_DESC_1</name>
 						<name>B</name>
 						<name>FREEMEM</name>
-						<address>0x00010000</address>
+						<address>0x00009000</address>
 					</section>
 				</sections>
 				<!-- enable remove unused code -->
@@ -499,7 +509,7 @@
 						<name>B_RX_DESC_1</name>
 						<name>B</name>
 						<name>FREEMEM</name>
-						<address>0x00010000</address>
+						<address>0x00009000</address>
 					</section>
 				</sections>
 				<!-- enable remove unused code -->
